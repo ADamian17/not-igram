@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// Import FilePond styles
+import 'filepond/dist/filepond.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
