@@ -48,7 +48,7 @@ const App = () => {
     }
   };
 
-  const postList = posts.length !== 0 ? posts.map( post => <img src={post.img} alt="post img"/>) : <div></div>; 
+  const postList = posts.length !== 0 ? posts.map( post => <img key={post._id} src={post.img} alt="post img"/>) : <div></div>; 
 
   return (
     <div className="App">
