@@ -7,6 +7,8 @@ import { FilePond, registerPlugin } from 'react-filepond'
 // Import FilePond styles
 import 'filepond/dist/filepond.min.css'
 
+import Navbar from './components/Navbar/Navbar';
+
 
 // Note: These need to be installed separately
 // `npm i filepond-plugin-image-preview FilePondPluginFileEncode`
@@ -55,7 +57,8 @@ const App = () => {
   const postList = posts.length !== 0 ? posts.map( post => <img key={post._id} src={post.img} alt="post img"/>) : <div></div>; 
 
   return (
-    <Routes />
+    <Navbar />
+    // <Routes />
   );
 }
 
